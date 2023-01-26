@@ -2,8 +2,8 @@
 
 # Vad du ska göra
 
-- [ ]  Fyll på din databas från labb 2 med lite mer exempeldata i alla tabeller.
-- [ ]  Skapa ett nytt console-program i C#
+- [x]  Fyll på din databas från labb 2 med lite mer exempeldata i alla tabeller.
+- [x]  Skapa ett nytt console-program i C#
 - [ ]  Skapa en enkel navigation i programmet som gör att användaren kan välja mellan följande funktioner.
 
 <aside>

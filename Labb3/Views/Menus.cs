@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
+﻿using Labb3.Controls;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -37,6 +38,9 @@ namespace Labb3.Views
                 case "2":
                     ShowAllStudentsInClass();
                     break;
+                case "3":
+                    AddNewEmployee();
+                    break;
                 default:
                     break;
             }
@@ -74,7 +78,13 @@ namespace Labb3.Views
         public static void ShowAllStudentsInClass()
         {
             Console.Clear();
-            Controls.ShowStudents.ShowAllStudentsInClass();
+            ShowStudents.ShowAllStudentsInClass();
+        }
+    
+        public static void AddNewEmployee()
+        {
+            Console.Clear();
+            AddEmployee.AddNewEmployee();
         }
     }
 }

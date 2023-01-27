@@ -1,4 +1,6 @@
 ﻿using Labb3.Models;
+using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.EntityFrameworkCore.Metadata;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,6 +59,25 @@ namespace Labb3.Controls
             }            
         }
 
+        public static void ShowAllStudentsInClass()
+        {
+            // Init variables
+            var context = new Labb3DbContext();
+            var students = context.Students;
+            
+            // Show all classes that exist using Distinct to remove duplicates
+            foreach (var student in students.Select(x => x.ClassName).Distinct()) {
+                Console.WriteLine(student);
+            }
 
+            // Get input from user
+            Console.Write("Select class: ");
+            string classToSearchFrom = Console.ReadLine().ToUpper().Trim();
+
+            Console.Clear();
+            foreach (var student in students.Where(x => x.ClassName == classToSearchFrom)) {
+                Console.WriteLine(student.FName + " " + student.LName);
+            }
+        }
     }
 }

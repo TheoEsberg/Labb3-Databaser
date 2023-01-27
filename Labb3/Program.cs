@@ -2,5 +2,6 @@
 using Labb3.Controls;
 using Labb3.Views;
 
+
 Menus.Init();
 Console.ReadKey();

@@ -34,6 +34,9 @@ namespace Labb3.Views
                 case "1":
                     ShowAllStudents();
                     break;
+                case "2":
+                    ShowAllStudentsInClass();
+                    break;
                 default:
                     break;
             }
@@ -66,6 +69,12 @@ namespace Labb3.Views
             Console.WriteLine("\nPress any key to return.");
             Console.ReadKey();
             DrawMenu();
+        }
+
+        public static void ShowAllStudentsInClass()
+        {
+            Console.Clear();
+            Controls.ShowStudents.ShowAllStudentsInClass();
         }
     }
 }

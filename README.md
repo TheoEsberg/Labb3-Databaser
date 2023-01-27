@@ -19,7 +19,7 @@
     
     Extra utmaning: låt användaren även få välja sortering på eleverna som i punkten ovan.
     
-- [ ]  Lägga till ny personal (ska lösas genom Entity framework)
+- [x]  Lägga till ny personal (ska lösas genom Entity framework)
     
     Användaren får möjlighet att mata in uppgifter om en ny anställd och den datan sparas då ner i databasen.
     

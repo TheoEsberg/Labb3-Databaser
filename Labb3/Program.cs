@@ -1,3 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using Labb3.Controls;
+using Labb3.Views;
 
+Menus.Init();
+Console.ReadKey();

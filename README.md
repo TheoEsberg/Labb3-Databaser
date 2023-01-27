@@ -4,12 +4,12 @@
 
 - [x]  Fyll på din databas från labb 2 med lite mer exempeldata i alla tabeller.
 - [x]  Skapa ett nytt console-program i C#
-- [ ]  Skapa en enkel navigation i programmet som gör att användaren kan välja mellan följande funktioner.
+- [x]  Skapa en enkel navigation i programmet som gör att användaren kan välja mellan följande funktioner.
 
 <aside>
 💡  **Entity framwork : Consol**
 
-- [ ]  Hämta alla elever (ska lösas med Entity framwork)
+- [x]  Hämta alla elever (ska lösas med Entity framwork)
     
     Användaren får välja om de vill se eleverna sorterade på för- eller efternamn och om det ska vara stigande eller fallande sortering.
     
